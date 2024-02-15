@@ -1,0 +1,85 @@
+.sponsor-container{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, rgb(226, 248, 255), rgb(243, 252, 255));
+}
+.sponsor-container .information{
+    height: 40%;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    /* margin: 20px 50px;
+    padding-top: 35px; */
+    text-align: center;
+}
+.sponsor-container .information h1{
+    font-size: 35px;
+}
+.sponsor-container .information p{
+    font-size: 18px;
+}
+.sponsor-container .sponsor{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sponsor-container .sponsor img{
+    width: 10%;
+    height: auto;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 800px){
+    .sponsor-container .sponsor{
+        flex-wrap: wrap;
+    }
+    .sponsor-container .sponsor img {
+        width: 15%; /* Adjust image size for smaller screens */
+        height: auto; /* Set height to auto to maintain aspect ratio */
+        margin: 10px; /* Add some margin between images */
+    }
+
+}
+@media only screen and (max-width: 1400px){
+    .sponsor-container{
+        height: 50%;
+    }
+    .sponsor-container .sponsor{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sponsor-container .sponsor img{
+        width: 15%; 
+        height: auto; 
+        margin: 10px; 
+    }
+
+}
+@media only screen and (max-width: 1100px){
+    .sponsor-container{
+        height: 50%;
+    }
+    .sponsor-container .sponsor{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sponsor-container .sponsor img{
+        width: 15%; 
+        height: auto; 
+        margin: 10px; 
+    }
+
+}
+/* @media only screen and (min-width: 700px){
+    .sponsor-container .sponsor{
+        flex-wrap: wrap;
+    }
+    .sponsor-container .sponsor img {
+        width: 10%; 
+        height: auto; 
+        margin: 10px; 
+    }
+
+} */

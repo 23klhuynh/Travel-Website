@@ -1,0 +1,117 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.navbar .leftside {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .leftside img {
+  width: 70%;
+}
+.navbar .rightside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  height: 100%;
+}
+.navbar .rightside a {
+  color: white;
+  text-decoration: none;
+  background-color: none;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.navbar .rightside a:hover {
+  color: rgb(121, 199, 225);
+}
+.navbar .rightside button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.navbar .rightSide svg {
+  font-size: 40px;
+}
+
+.navbar #open {
+  width: 100%;
+  display: flex ;
+  justify-content: center;
+}
+.navbar #open img {
+  display: none;
+}
+
+.navbar #close img {
+  display: inherit;
+}
+.navbar #open .hiddenLinks {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navbar #open .hiddenLinks a{
+  border: 2px white solid;
+  padding: 10px;
+  border-radius: 32px;
+}
+
+.navbar #close .hiddenLinks {
+  display: none;
+}
+
+.navbar #open a {
+  width: 70px;
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar .rightside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar .rightside a {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .navbar .rightside a {
+    display: none;
+  }
+
+  .navbar .rightside {
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+
+  .navbar .rightside button {
+    display: inherit;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .navbar .rightside button {
+    display: none;
+  }
+
+  .hiddenLinks {
+    display: none;
+  }
+}
